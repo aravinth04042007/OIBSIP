@@ -3,870 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>MS Dhoni Tribute</title>
+<title>My Tasks</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link
-href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet">
-
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
-
 <body>
 
-<header>
+<div class="container">
 
-<div class="logo">
-<span>MSD</span>
-<p>07</p>
-</div>
+    <header>
 
-<nav>
+        <div class="title">
 
-<a href="#">Journey</a>
-<a href="#">Achievements</a>
-<a href="#">Stats</a>
-<a href="#">Moments</a>
-<a href="#">Legacy</a>
+            <div class="icon">
+                <i class="fa-solid fa-list-check"></i>
+            </div>
 
-</nav>
+            <div>
+                <h1>My Tasks</h1>
+                <p>Stay organised, get things done</p>
+            </div>
 
-</header>
+        </div>
 
-<section class="hero">
+        <div class="status">
 
-<div class="left">
+            <span class="pending-count">
+                <span id="pendingCount">0</span> Pending
+            </span>
 
-<div class="badge">
+            <span class="completed-count">
+                <span id="completedCount">0</span> Completed
+            </span>
 
-<i class="fa-solid fa-star"></i>
+        </div>
 
-Legend of Indian Cricket
+    </header>
 
-</div>
 
-<h1>
+    <div class="add-task">
 
-Mahendra<br>
+        <h2>New Task</h2>
 
-Singh<br>
+        <div class="input-box">
 
-<span>Dhoni</span>
+            <input
+            type="text"
+            id="taskInput"
+            placeholder="What needs to be done?">
 
-</h1>
+            <button id="addBtn">
+                <i class="fa-solid fa-plus"></i>
+                Add Task
+            </button>
 
-<p>
-
-Captain Cool. The Finisher. Wicketkeeper Extraordinaire.
-
-A leader who transformed Indian cricket and gave us
-
-moments we'll never forget.
-
-</p>
-
-<div class="buttons">
-
-<a href="#" class="btn1">
-
-Explore His Journey
-
-<i class="fa-solid fa-chevron-down"></i>
-
-</a>
-
-<a href="#" class="btn2">
-
-<i class="fa-solid fa-trophy"></i>
-
-Achievements
-
-</a>
-
-</div>
-
-</div>
-
-<div class="right">
-
-<div class="card">
-
-<img src="dhoni.png" alt="MS Dhoni">
-
-<div class="card-content">
-
-<h2>#7</h2>
-
-<div>
-
-<h3>Captain of Indian Cricket Team</h3>
-
-<p>2007 - 2017</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<section class="journey" id="journey">
-
-    <div class="section-title">
-
-        <span class="tag">
-            <i class="fa-regular fa-calendar"></i>
-            The Journey
-        </span>
-
-        <h2>
-            From <span>Ranchi</span> to Glory
-        </h2>
-
-        <p>
-            A ticket collector with dreams, who became India's most successful captain
-        </p>
+        </div>
 
     </div>
 
-    <div class="timeline">
 
-        <div class="timeline-item left">
+    <div class="task-section">
 
-            <div class="content">
+        <div>
 
-                <h3>1981</h3>
+            <div class="heading">
+                <h3>Pending Tasks</h3>
+                <span id="pendingBadge">0</span>
+            </div>
 
-                <h4>Born in Ranchi</h4>
+            <div id="pendingList" class="list">
 
-                <p>
-                    July 7, 1981 - A legend was born in the small town of
-                    Ranchi, Jharkhand.
-                </p>
+                <div class="empty" id="emptyPending">
+
+                    <i class="fa-regular fa-clipboard"></i>
+
+                    <p>No pending tasks — great work!</p>
+
+                </div>
 
             </div>
 
         </div>
 
-        <div class="timeline-item right">
+        <div>
 
-            <div class="content">
+            <div class="heading">
 
-                <h3>2004</h3>
+                <h3>Completed Tasks</h3>
 
-                <h4>International Debut</h4>
-
-                <p>
-                    Made his ODI debut against Bangladesh on
-                    December 23, 2004.
-                </p>
+                <span id="completedBadge">0</span>
 
             </div>
 
-        </div>
-
-        <div class="timeline-item left">
-
-            <div class="content">
-
-                <h3>2007</h3>
-
-                <h4>Captain of India</h4>
-
-                <p>
-                    Appointed captain of the Indian T20 team and won
-                    the inaugural ICC T20 World Cup.
-                </p>
-
-            </div>
+            <div id="completedList" class="list"></div>
+             
 
         </div>
-        <div class="timeline-item left">
-
-
-        </div>
-
-        <div class="timeline-item right">
-
-            <div class="content">
-
-                <h3>2011</h3>
-
-                <h4>World Cup Champion</h4>
-
-                <p>
-                    Finished the final with an unforgettable six and
-                    lifted the ICC Cricket World Cup.
-                </p>
-
-            </div>
-
-        </div>
-        <div class="timeline-item left">
-
-    <div class="content">
-
-        <h3>2013</h3>
-
-        <h4>ICC Champions Trophy</h4>
-
-        <p>
-            Guided India to the ICC Champions Trophy title in England, becoming
-            the first captain in cricket history to win the ICC T20 World Cup,
-            Cricket World Cup, and Champions Trophy. 
-        </p>
-
-    </div>
-
-</div>
-    <div class="timeline-item right">
-
-    <div class="content">
-
-        <h3>2020</h3>
-
-        <h4>International Retirement</h4>
-
-        <p>
-            On August 15, 2020, MS Dhoni announced his retirement from
-            international cricket after an extraordinary career spanning
-            over 15 years, leaving behind a legacy as one of India's
-            greatest captains and finishers.
-        </p>
 
     </div>
 
 </div>
 
-    </div>
-
-</section>
-<section class="achievements" id="achievements">
-
-    <div class="section-heading">
-
-        <span class="badge">
-            <i class="fa-solid fa-trophy"></i>
-            Achievements
-        </span>
-
-        <h2>
-            Trophies & <span>Records</span>
-        </h2>
-
-    </div>
-
-    <div class="achievement-container">
-
-        <!-- Card 1 -->
-
-        <div class="achievement-card card1">
-
-            <div class="icon orange">
-
-                <i class="fa-solid fa-trophy"></i>
-
-            </div>
-
-            <h3>3 ICC Trophies</h3>
-
-            <p>
-                Only captain to win T20 WC, ODI WC, and Champions Trophy.
-            </p>
-
-        </div>
-
-        <!-- Card 2 -->
-
-        <div class="achievement-card card2">
-
-            <div class="icon blue">
-
-                <i class="fa-solid fa-medal"></i>
-
-            </div>
-
-            <h3>#1 Test Ranking</h3>
-
-            <p>
-                Led India to become the No.1 Test team in the ICC rankings in 2009.
-            </p>
-
-        </div>
-
-        <!-- Card 3 -->
-
-        <div class="achievement-card card3">
-
-            <div class="icon green">
-
-                <i class="fa-regular fa-star"></i>
-
-            </div>
-
-            <h3>5 IPL Titles</h3>
-
-            <p>
-                One of the most successful captains in IPL history with Chennai Super Kings.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-<section class="stats-section">
-
-    <div class="stats-container">
-
-        <div class="stat-card">
-
-            <div class="stat-icon">
-                <i class="fa-solid fa-award"></i>
-            </div>
-
-            <h2>2018</h2>
-
-            <p>Padma Shri</p>
-
-        </div>
-
-        <div class="stat-card">
-
-            <div class="stat-icon">
-                <i class="fa-solid fa-bullseye"></i>
-            </div>
-
-            <h2>196*</h2>
-
-            <p>Highest 10th Wicket Partnership</p>
-
-        </div>
-
-        <div class="stat-card">
-
-            <div class="stat-icon">
-                <i class="fa-regular fa-star"></i>
-            </div>
-
-            <h2>8 Times</h2>
-
-            <p>ICC ODI Team of the Year</p>
-
-        </div>
-
-        <div class="stat-card">
-
-            <div class="stat-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-
-            <h2>2007</h2>
-
-            <p>Rajiv Gandhi Khel Ratna</p>
-
-        </div>
-
-    </div>
-
-</section>
-<section class="statistics" id="stats">
-
-    <div class="stats-heading">
-
-        <span class="stats-badge">
-            <i class="fa-solid fa-bullseye"></i>
-            Career Statistics
-        </span>
-
-        <h2>
-            By The <span>Numbers</span>
-        </h2>
-
-    </div>
-
-    <div class="stats-grid">
-
-        <!-- ODI Career -->
-
-        <div class="career-card">
-
-            <h3>
-                <i class="fa-regular fa-circle-dot"></i>
-                ODI Career
-            </h3>
-
-            <div class="stat">
-                <div class="label">
-                    <span>Matches</span>
-                    <strong>350</strong>
-                </div>
-                <div class="bar">
-                    <div class="fill blue" style="width:70%;"></div>
-                </div>
-            </div>
-
-            <div class="stat">
-                <div class="label">
-                    <span>Runs</span>
-                    <strong>10,773</strong>
-                </div>
-                <div class="bar">
-                    <div class="fill blue" style="width:60%;"></div>
-                </div>
-            </div>
-
-            <div class="stat">
-                <div class="label">
-                    <span>Average</span>
-                    <strong>50.57</strong>
-                </div>
-                <div class="bar">
-                    <div class="fill blue" style="width:50%;"></div>
-                </div>
-            </div>
-
-            <div class="stat">
-                <div class="label">
-                    <span>Centuries</span>
-                    <strong>10</strong>
-                </div>
-                <div class="bar">
-                    <div class="fill blue" style="width:20%;"></div>
-                </div>
-            </div>
-
-            <div class="stat">
-                <div class="label">
-                    <span>Half-Centuries</span>
-                    <strong>73</strong>
-                </div>
-                <div class="bar">
-                    <div class="fill blue" style="width:73%;"></div>
-                </div>
-            </div>
-
-            <div class="bottom-stats">
-
-                <div>
-                    <h4>183*</h4>
-                    <p>Highest Score</p>
-                </div>
-
-                <div>
-                    <h4>326</h4>
-                    <p>Catches</p>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Test Career -->
-
-        <div class="career-card">
-
-            <h3>
-                <i class="fa-solid fa-trophy"></i>
-                Test Career
-            </h3>
-
-            <div class="stat">
-                <div class="label">
-                    <span>Matches</span>
-                    <strong>90</strong>
-                </div>
-                <div class="bar">
-                    <div class="fill green" style="width:45%;"></div>
-                </div>
-            </div>
-
-            <div class="stat">
-                <div class="label">
-                    <span>Runs</span>
-                    <strong>4,876</strong>
-                </div>
-                <div class="bar">
-                    <div class="fill green" style="width:35%;"></div>
-                </div>
-            </div>
-
-            <div class="stat">
-                <div class="label">
-                    <span>Average</span>
-                    <strong>38.09</strong>
-                </div>
-                <div class="bar">
-                    <div class="fill green" style="width:42%;"></div>
-                </div>
-            </div>
-
-            <div class="stat">
-                <div class="label">
-                    <span>Centuries</span>
-                    <strong>6</strong>
-                </div>
-                <div class="bar">
-                    <div class="fill green" style="width:15%;"></div>
-                </div>
-            </div>
-
-            <div class="stat">
-                <div class="label">
-                    <span>Half-Centuries</span>
-                    <strong>33</strong>
-                </div>
-                <div class="bar">
-                    <div class="fill green" style="width:36%;"></div>
-                </div>
-            </div>
-
-            <div class="bottom-stats">
-
-                <div>
-                    <h4>224</h4>
-                    <p>Highest Score</p>
-                </div>
-
-                <div>
-                    <h4>256</h4>
-                    <p>Catches</p>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- T20I & IPL -->
-
-        <div class="career-card">
-
-            <h3>
-                <i class="fa-regular fa-star"></i>
-                T20I & IPL
-            </h3>
-
-            <div class="stat">
-                <div class="label">
-                    <span>T20I Matches</span>
-                    <strong>98</strong>
-                </div>
-                <div class="bar">
-                    <div class="fill orange" style="width:65%;"></div>
-                </div>
-            </div>
-
-            <div class="stat">
-                <div class="label">
-                    <span>T20I Runs</span>
-                    <strong>1,617</strong>
-                </div>
-                <div class="bar">
-                    <div class="fill orange" style="width:40%;"></div>
-                </div>
-            </div>
-
-            <div class="stat">
-                <div class="label">
-                    <span>IPL Matches</span>
-                    <strong>250</strong>
-                </div>
-                <div class="bar">
-                    <div class="fill orange" style="width:85%;"></div>
-                </div>
-            </div>
-
-            <div class="stat">
-                <div class="label">
-                    <span>IPL Runs</span>
-                    <strong>5,082</strong>
-                </div>
-                <div class="bar">
-                    <div class="fill orange" style="width:62%;"></div>
-                </div>
-            </div>
-
-            <div class="stat">
-                <div class="label">
-                    <span>IPL Titles</span>
-                    <strong>5</strong>
-                </div>
-                <div class="bar">
-                    <div class="fill orange" style="width:60%;"></div>
-                </div>
-            </div>
-
-            <div class="bottom-stats">
-
-                <div>
-                    <h4>48*</h4>
-                    <p>Highest T20I Score</p>
-                </div>
-
-                <div>
-                    <h4>24</h4>
-                    <p>Player of the Match</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<section class="moments" id="moments">
-
-    <div class="moments-heading">
-
-        <span class="moment-badge">
-            <i class="fa-regular fa-heart"></i>
-            Iconic Moments
-        </span>
-
-        <h2>
-            Moments That <span>Defined</span> Him
-        </h2>
-
-    </div>
-
-    <div class="moments-grid">
-
-        <!-- 2011 World Cup -->
-
-        <div class="moment-card">
-
-            <img src="worldcup2011.jpg" alt="2011 World Cup Winning Six">
-
-            <div class="moment-content">
-
-                <h3>The World Cup Winning Six – 2011</h3>
-
-                <p>
-                    With 4 runs needed, Dhoni smashed Nuwan Kulasekara
-                    over long-on for a historic six, ending India's
-                    28-year wait for the ICC Cricket World Cup.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- 2007 T20 World Cup -->
-
-        <div class="moment-card">
-
-            <img src="t20worldcup2007.jpg" alt="T20 World Cup Final">
-
-            <div class="moment-content">
-
-                <h3>T20 World Cup Final – 2007</h3>
-
-                <p>
-                    Dhoni trusted Joginder Sharma to bowl the final over.
-                    Misbah-ul-Haq's scoop landed in Sreesanth's hands,
-                    and India became the first ICC T20 World Champions.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- No.1 Test Team -->
-
-        <div class="moment-card">
-
-            <img src="testranking.jpg" alt="Number One Test Team">
-
-            <div class="moment-content">
-
-                <h3>India Became No.1 Test Team – 2009</h3>
-
-                <p>
-                    Under Dhoni's captaincy, India reached the No.1
-                    position in the ICC Test rankings for the first time.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- Champions Trophy -->
-
-        <div class="moment-card">
-
-            <img src="champions2013.jpg" alt="Champions Trophy">
-
-            <div class="moment-content">
-
-                <h3>Champions Trophy Glory – 2013</h3>
-
-                <p>
-                    India defeated England to win the ICC Champions
-                    Trophy, making Dhoni the only captain to win all
-                    three major ICC white-ball trophies.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- Retirement -->
-
-        <div class="moment-card">
-
-            <img src="retirement.jpg" alt="Retirement">
-
-            <div class="moment-content">
-
-                <h3>Retirement From International Cricket – 2020</h3>
-
-                <p>
-                    On August 15, 2020, Dhoni announced his retirement
-                    with the emotional message, "Thanks a lot for your
-                    love and support throughout."
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- IPL Titles -->
-
-        <div class="moment-card">
-
-            <img src="csk2023.jpg" alt="IPL Trophy">
-
-            <div class="moment-content">
-
-                <h3>5th IPL Trophy – 2023</h3>
-
-                <p>
-                    Chennai Super Kings lifted their fifth IPL title
-                    under Dhoni's leadership, equalling the record for
-                    the most IPL championships.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<section class="legacy" id="legacy">
-
-    <div class="legacy-heading">
-
-        <span class="legacy-badge">
-            <i class="fa-solid fa-wand-magic-sparkles"></i>
-            Legacy
-        </span>
-
-        <h2>
-            Beyond the <span>Game</span>
-        </h2>
-
-    </div>
-
-    <div class="legacy-container">
-
-        <!-- Left Content -->
-
-        <div class="legacy-left">
-
-            <h3>
-                MS Dhoni wasn't just a cricketer. He was a revolution.
-                From a small-town boy who worked as a ticket collector in
-                Indian Railways to the most successful captain in Indian
-                cricket history.
-            </h3>
-
-            <p>
-                His legacy goes beyond trophies and records. He redefined
-                how Indian cricket approached pressure situations. The
-                calmness with which he handled the most intense moments
-                earned him the name "Captain Cool." He trusted youngsters
-                when others didn't, backed them through failures, and
-                created a generation of match-winners.
-            </p>
-
-            <div class="legacy-info">
-
-                <span>
-                    <i class="fa-solid fa-location-dot"></i>
-                    Ranchi, Jharkhand
-                </span>
-
-                <span>
-                    <i class="fa-regular fa-calendar"></i>
-                    2004 - 2020
-                </span>
-
-            </div>
-
-        </div>
-
-        <!-- Right Quote Card -->
-
-        <div class="quote-card">
-
-            <p class="quote">
-
-                "I have always believed that process is more important than results"
-
-            </p>
-
-            <div class="quote-profile">
-
-                <div class="avatar">
-                    MSD
-                </div>
-
-                <div>
-
-                    <h4>MS Dhoni</h4>
-
-                    <span>On handling pressure</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<footer class="footer">
-
-    <h2>MSD 07</h2>
-
-    <p class="footer-text">
-        A tribute to the legend who changed Indian cricket forever
-    </p>
-
-    <div class="footer-bottom">
-
-        <span>1981 - Forever</span>
-
-        <span class="dot">•</span>
-
-        <span>
-            <i class="fa-regular fa-heart"></i>
-            Made with love for cricket
-        </span>
-
-    </div>
-
-</footer>
+<script src="script.js"></script>
 
 </body>
 </html>
