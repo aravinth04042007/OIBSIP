@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Create Account</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,16 +11,24 @@
 
 <div class="container">
 
-    <h1>Welcome Back</h1>
-    <p>Sign in to access your tasks</p>
+    <h1>Create Account</h1>
+    <p>Sign up to start managing your tasks</p>
 
-    <form id="loginForm">
+    <form id="signupForm">
+
+        <label>Username</label>
+
+        <input
+        type="text"
+        id="username"
+        placeholder="Enter Username"
+        required>
 
         <label>Email</label>
 
         <input
         type="email"
-        id="loginEmail"
+        id="email"
         placeholder="Enter Email"
         required>
 
@@ -28,19 +36,27 @@
 
         <input
         type="password"
-        id="loginPassword"
+        id="password"
         placeholder="Enter Password"
         required>
 
+        <label>Confirm Password</label>
+
+        <input
+        type="password"
+        id="confirmPassword"
+        placeholder="Confirm Password"
+        required>
+
         <button type="submit">
-            Sign In
+            Create Account
         </button>
 
     </form>
 
     <p>
-        Don't have an account?
-        <a href="signup.html">Sign Up</a>
+        Already have an account?
+        <a href="index.html">Sign In</a>
     </p>
 
 </div>
