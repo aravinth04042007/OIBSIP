@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Tasks</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+
+        <div class="title">
+
+            <div class="icon">
+                <i class="fa-solid fa-list-check"></i>
+            </div>
+
+            <div>
+                <h1>My Tasks</h1>
+                <p>Stay organised, get things done</p>
+            </div>
+
+        </div>
+
+        <div class="status">
+
+            <span class="pending-count">
+                <span id="pendingCount">0</span> Pending
+            </span>
+
+            <span class="completed-count">
+                <span id="completedCount">0</span> Completed
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <div class="add-task">
+
+        <h2>New Task</h2>
+
+        <div class="input-box">
+
+            <input
+            type="text"
+            id="taskInput"
+            placeholder="What needs to be done?">
+
+            <button id="addBtn">
+                <i class="fa-solid fa-plus"></i>
+                Add Task
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="task-section">
+
+        <div>
+
+            <div class="heading">
+                <h3>Pending Tasks</h3>
+                <span id="pendingBadge">0</span>
+            </div>
+
+            <div id="pendingList" class="list">
+
+                <div class="empty" id="emptyPending">
+
+                    <i class="fa-regular fa-clipboard"></i>
+
+                    <p>No pending tasks — great work!</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <div class="heading">
+
+                <h3>Completed Tasks</h3>
+
+                <span id="completedBadge">0</span>
+
+            </div>
+
+            <div id="completedList" class="list"></div>
+             
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
